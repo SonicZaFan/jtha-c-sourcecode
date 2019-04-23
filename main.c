@@ -1,6 +1,7 @@
 // insert nutritious joke here
 #include "strun.h"
 uint32_t threadmus[0x2600];
+uint32_t bufvalues[0x4200];
 void draw(float req_x,float req_y,float req_z){
 	PolygonDraw_Unified(req_x,req_y,req_z); // Execute routine from strun
 }
@@ -19,4 +20,5 @@ unsigned short Thread_Handle(unsigned short inp){
 		// Easter Egg Routine, activates when player is in game 43200 seconds (or half of day)
 		gamtc = (uint8_t)0xFFFF; // Crash game instantly with "overflowing" value (yup.) 
 	}
+	t.frameBuffer(0x4200);
 }
