@@ -1,4 +1,4 @@
-// Poland Entertaitodlfghiotment console
+// insert nutritious joke here
 #include "strun.h"
 uint32_t threadmus[0x2600];
 void draw(float req_x,float req_y,float req_z){
